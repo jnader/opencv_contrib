@@ -1207,6 +1207,7 @@ double cv::omnidir::calibrate(InputArrayOfArrays patternPoints, InputArrayOfArra
     double rms;
     Mat errors;
     cv::omnidir::internal::estimateUncertainties(_patternPoints, _imagePoints, finalParam, errors, std_error, rms, flags);
+
     return rms;
 }
 
